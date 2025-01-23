@@ -22,10 +22,26 @@ pnpm start
  - `/public`: Contains all the static assets for your application, such as images.
  - Config Files: Most of these files (e.g., `next.config.ts`) are created and pre-configured when you start a new project using `create-next-app`. 
 
-### Opt out telemetry
+<!-- ### Opt out nextjs telemetry
 
 ```sh
 pnpm exec next telemetry disable
+``` -->
+
+### GitHub
+
+```sh
+git config --global user.email ""
+git config --global user.name ""
+
+git init
+nano .gitignore
+
+# Go to GitHub.com → Settings → Developer Settings → Personal Access Tokens → Tokens (classic)
+git remote set-url origin https://YOUR_GITHUB_USERNAME:TOKEN@github.com/mbonum/fe.git
+git config --global credential.helper store
+
+git add .
+git commit -m ""
+git push -m origin main
 ```
-
-

@@ -45,3 +45,10 @@ git add .
 git commit -m ""
 git push -m origin main
 ```
+
+### Shadcn/ui
+
+
+```sh
+pnpm dlx shadcn@latest add dialog
+```

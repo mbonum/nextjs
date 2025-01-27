@@ -31,30 +31,26 @@ export function PdfUpload() {
   }
 
   return (
-    <Card className="w-full max-w-2xl">
+    <Card className="w-full max-w-2xl border-0 shadow-none">
       <CardHeader>
-        <CardTitle>Pet Analysis Upload</CardTitle>
-        <CardDescription>
+        <CardTitle>Upload your Pet Analysis</CardTitle>
+        {/* <CardDescription>
           Upload your pet&apos;s veterinary PDF analysis to convert it to a structured format
-        </CardDescription>
+        </CardDescription> */}
       </CardHeader>
       <CardContent>
-        <form action={handleSubmit} className="space-y-4">
-          <div className="flex flex-col items-center justify-center border-2 border-dashed rounded-lg p-6 bg-muted/50">
-            <FileUp className="h-8 w-8 mb-2 text-muted-foreground" />
+        <form action={handleSubmit} className="space-y-6">
+          <div className="flex flex-col items-center justify-center border-2 border-dashed rounded-lg p-4 bg-muted/50">
+            <FileUp className="size-8 mb-2 text-muted-foreground" />
             <input
               type="file"
               name="pdf"
               accept="application/pdf"
-              className="block w-full text-sm text-muted-foreground
-                file:mr-4 file:py-2 file:px-4
-                file:rounded-full file:border-0
-                file:text-sm file:font-semibold
-                file:bg-primary file:text-primary-foreground
-                hover:file:bg-primary/90 cursor-pointer"
+              multiple
+              className="block w-full md:w-auto text-sm text-muted-foreground file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-amber-500 file:text-primary-foreground hover:file:bg-amber-500/85 cursor-pointer"
             />
           </div>
-          <button type="submit" className="w-full bg-zinc-900 text-white hover:bg-zinc-700 dark:bg-zinc-50 dark:text-zinc-900 rounded-xl py-2" disabled={isLoading}>
+          <button type="submit" className="w-full bg-amber-500 text-white hover:bg-amber-500/85 dark:bg-zinc-50 dark:text-zinc-900 rounded-xl shadow-[rgba(0,_0,_0,_0.2)_0px_2px_3px] py-2" disabled={isLoading}>
             {isLoading ? (
               <>
                 <Loader2 className="mr-2 h-4 w-4 animate-spin" />

@@ -19,15 +19,15 @@ export default function Page() {
         </Link>
       </div>
       <div className="mt-4 flex grow flex-col gap-4 md:flex-row">
-        <div className="flex flex-col justify-center gap-6 rounded-lg bg-gray-50 px-6 py-10 md:w-2/5 md:px-20">
+        <div className="flex flex-col justify-center gap-6 rounded-lg bg-gray-50 px-6 py-10 md:w-1/3 md:px-20">
         </div>
 
         <div className="min-h-screen flex items-center justify-center p-4 bg-muted/30">
           <PdfUpload />
         </div>
 
-        <div className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12">
-          <Image
+        <div className="flex items-center justify-center p-6 md:w-1/3 md:px-28 md:py-12">
+          {/* <Image
             src="/hero-mobile.png"
             width={560}
             height={620}
@@ -40,7 +40,7 @@ export default function Page() {
             height={760}
             className="hidden md:block"
             alt="Screenshots of the dashboard project showing desktop version"
-          />
+          /> */}
         </div>
       </div>
     </main>

@@ -38,12 +38,12 @@ git init
 nano .gitignore
 
 # Go to GitHub.com → Settings → Developer Settings → Personal Access Tokens → Tokens (classic)
-git remote set-url origin https://YOUR_GITHUB_USERNAME:TOKEN@github.com/mbonum/fe.git
+git remote set-url origin https://YOUR_GITHUB_USERNAME:TOKEN@github.com/mbonum/REPO.git
 git config --global credential.helper store
 
 git add .
 git commit -m ""
-git push -m origin main
+git push -u origin main
 ```
 
 ### Shadcn/ui
